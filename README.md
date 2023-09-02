@@ -12,14 +12,41 @@ Tujuan utamanya adalah meningkatkan konsistensi, kualitas, dan efisiensi pengemb
 
 ### Ruang Lingkup
 
-Dokumentasi ini mencakup praktik terbaik dalam penggunaan bahasa Go, struktur proyek, panduan penulisan kode, pengujian, 
-serta alur kerja kolaborasi.
+Dokumentasi ini mencakup pengenalan bahasa Go, praktik terbaik dalam penggunaan bahasa Go, struktur proyek, panduan 
+penulisan kode, serta alur kerja kolaborasi.
 
 ### Referensi
 
 - [Dokumentasi Resmi Go](https://go.dev/doc/)
 - [Effectice Go](https://go.dev/doc/effective_go)
 - [Go Project Layout](https://github.com/golang-standards/project-layout)
+- [Dasar Pemrograman Golang](https://dasarpemrogramangolang.novalagung.com/)
+
+## Pengenalan
+
+Golang (atau biasa disebut dengan Go) adalah bahasa pemrograman yang dikembangkan di Google oleh Robert Griesemer, 
+Rob Pike, dan Ken Thompson pada tahun 2007 dan mulai diperkenalkan ke publik tahun 2009. Penciptaan bahasa Go didasari 
+bahasa C dan C++, oleh karena itu gaya sintaksnya mirip.
+
+### Kelebihan Go
+
+- Mendukung konkurensi di level bahasa dengan pengaplikasian cukup mudah.
+- Mendukung pemrosesan data dengan banyak prosesor dalam waktu yang bersamaan (pararel processing).
+- Memiliki garbage collector.
+- Proses kompilasi sangat cepat.
+- Bukan bahasa pemrograman yang hirarkial dan bukan strict OOP, memberikan kebebasan ke developer perihal bagaimana cara 
+penulisan kode.
+- Dependensi dan tooling yang disediakan terbilang lengkap.
+- Dukungan komunitas sangat bagus. Banyak tools yang tersedia secara gratis dan open source yang bisa langsung dimanfaatkan.
+- Sudah banyak industri dan perusahaan yg menggunakan Go sampai level production, termasuk di antaranya adalah Google 
+sendiri.
+
+### Kekurangan Go
+
+- Golang relatif muda dalam hal umur bahasa pemrograman. Hal ini berarti lebih sedikit library yang ada, terutama 
+ketika berinteraksi dengan platform lain.
+- Karena usia bahasa pemrograman yang bisa dibilang muda, Komunitas bahasa pemrograman ini mungkin tidak sebesar bahasa-bahasa 
+pemrograman lain di luar sana.
 
 ## Struktur Proyek
 
