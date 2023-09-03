@@ -3,7 +3,7 @@
 Selamat datang di dokumentasi standard bahasa pemrograman Go! Dokumentasi ini akan memberikan panduan tentang cara mengembangkan 
 aplikasi dengan bahasa Go.
 
-## Pendahuluan
+## A. Pendahuluan
 
 ### Tujuan Dokumentasi
 
@@ -22,13 +22,13 @@ penulisan kode, serta alur kerja kolaborasi.
 - [Go Project Layout](https://github.com/golang-standards/project-layout)
 - [Dasar Pemrograman Golang](https://dasarpemrogramangolang.novalagung.com/)
 
-## Pengenalan
+## B. Pengenalan
 
 Golang (atau biasa disebut dengan Go) adalah bahasa pemrograman yang dikembangkan di Google oleh Robert Griesemer, 
 Rob Pike, dan Ken Thompson pada tahun 2007 dan mulai diperkenalkan ke publik tahun 2009. Penciptaan bahasa Go didasari 
 bahasa C dan C++, oleh karena itu gaya sintaksnya mirip.
 
-### Kelebihan Go
+### Kelebihan Golang
 
 - Mendukung konkurensi di level bahasa dengan pengaplikasian cukup mudah.
 - Mendukung pemrosesan data dengan banyak prosesor dalam waktu yang bersamaan (pararel processing).
@@ -41,13 +41,169 @@ penulisan kode.
 - Sudah banyak industri dan perusahaan yg menggunakan Go sampai level production, termasuk di antaranya adalah Google 
 sendiri.
 
-### Kekurangan Go
+### Kekurangan Golang
 
 - Golang relatif muda dalam hal umur bahasa pemrograman. Hal ini berarti lebih sedikit library yang ada, terutama 
 ketika berinteraksi dengan platform lain.
 - Karena usia bahasa pemrograman yang bisa dibilang muda, Komunitas bahasa pemrograman ini mungkin tidak sebesar bahasa-bahasa 
 pemrograman lain di luar sana.
 
+## C. Instalasi Golang
+
+### Windows
+
+1. Download terlebih dahulu installer-nya di https://golang.org/dl/. Pilih installer untuk sistem operasi Windows sesuai jenis bit yang digunakan.
+2. Setelah ter-download, jalankan installer, klik next hingga proses instalasi selesai. By default jika anda tidak merubah path pada saat instalasi, Go akan ter-install di C:\go. Path tersebut secara otomatis akan didaftarkan dalam PATH environment variable.
+3. Buka Command Prompt / CMD, eksekusi perintah berikut untuk mengecek versi Go.
+    ```shell 
+    go version
+    ````
+4. Jika output adalah sama dengan versi Go yang ter-install, menandakan proses instalasi berhasil.
+
+### MacOS
+
+Cara termudah instalasi Go di MacOS adalah menggunakan [Homebrew](https://brew.sh).
+
+1. Install terlebih dahulu Homebrew (jika belum ada), caranya jalankan perintah berikut di terminal.
+    ```shell
+    $ ruby -e "$(curl -fsSL http://git.io/pVOl)"
+    ```
+2. Install Go menggunakan command brew.
+    ```shell
+    $ brew install go
+    ```
+3. Tambahkan path binary Go ke PATH environment variable.
+    ```shell
+    $ echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.bash_profile
+    $ source ~/.bash_profile
+    ```
+4. Jalankan perintah berikut mengecek versi Go.
+    ```shell
+    go version
+    ```
+5. Jika output adalah sama dengan versi Go yang ter-install, menandakan proses instalasi berhasil.
+
+### Linux
+
+1. Unduh arsip installer dari https://golang.org/dl/, pilih installer untuk Linux yang sesuai dengan jenis bit komputer anda. 
+Proses download bisa dilakukan lewat CLI, menggunakan `wget` atau `curl`.
+    ```shell
+    $ wget https://storage.googleapis.com/golang/go1...
+    ```
+2. Buka terminal, extract arsip tersebut ke /usr/local.
+    ```shell
+    $ tar -C /usr/local -xzf go1...
+    ```
+3. Tambahkan path binary Go ke PATH environment variable.
+    ```shell
+    $ echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.bashrc
+    $ source ~/.bashrc
+    ```
+4. Selanjutnya, eksekusi perintah berikut untuk mengetes apakah Go sudah terinstal dengan benar.
+    ```shell
+    go version
+    ```
+5. Jika output adalah sama dengan versi Go yang ter-install, menandakan proses instalasi berhasil.
+
+### Variabel `GOROOT`
+
+By default, setelah proses instalasi Go selesai, secara otomatis akan muncul environment variable GOROOT. Isi dari 
+variabel ini adalah lokasi di mana Go ter-install. Sebagai contoh di Windows, ketika Go di-install di C:\go, maka path 
+tersebut akan menjadi isi dari GOROOT. Silakan gunakan command go env untuk melihat informasi konfigurasi environment yang ada.
+
+## D. Go Modules
+
+### Penjelasan
+
+Go modules meruapakan manajemen dependensi resmi untuk Go. Modules ini diperkenalkan pertama kali di `go1.11`, sebemum itu
+pengembangan project Go dilakukan dalam `GOPATH`. Modules digunakan untuk menginisialisasi sebuah project, sekaligus melakukan
+manajemen terhadap 3rd party atau library lain yang dipergunakan. Modules penggunaannya adalah lewat CLI. Dan jika teman-teman
+sudah sukses meng-install Go, maka otomatis bisa mempergunakan Go Modules.
+
+### Inisialisasi Project Menggunakan Go Modules
+
+Command `go mod init` dingunakan untuk menginisialisasi project baru.
+Skema penulisan command `go mod`:
+```shell
+go mod init <nama-project>
+```
+Untuk nama project, umumnya adalah simakan dengan nama direktori, tapi bisa saja sebenarnya menggunakan nama yang lain.
+> Nama project dan nama module merupakan istilah yang sama
+
+Eksekusi perintah `go mod init` menghasilkan satu buah file baru bernama `go.mod`. File ini digunakan oleh Go toolchain
+untuk menandai bahwa folder di mana file tersebut berada adalah folder project.
+
+Cukup itu saja cara inisialisasi project di Go. Sebenarnya selain Go Modules, setup project di Go juga bisa menggunakan
+`$GOPATH`. Tapi inisialisasi project dengan GOPATH sudah outdate dan kurang dianjurkan untuk project-project yang dikembangkan
+menggunakan Go versi terbaru (1.14 ke atas).
+
+## E. Command
+
+Pengembangan aplikasi Go tak jauh dari hal-hal yang berbau CLI atau _Command Line Interface_. Proses inisialisasi project,
+kompilasi, testing, eksekusi program, semuanya dilakukan lewat command line.
+
+### Command `go mod init`
+
+_Command_ `go mod init` digunakan untuk inisialisasi project pada Go (menggunakan Go Modules). Untuk nama project bisa menggunakan
+apapun, tapi umumnya adalah disamakan dengan nama direktori. Nama project ini penting karena nantinya berpengaruh pada
+_import path sub packages_ yang ada dalam project tersebut.
+
+```shell
+mkdir <nama-project>
+cd <nama-project>
+go mod init <nama-project>
+```
+### Command `go run`
+
+_Command_ `go run` digunakan untuk eksekusi file program (file ber-ekstensi `.go`). Cara penggunaannya dengan menuliskan
+_command_ tersebut diikuti argumen nama file. Berikut adalah contoh penerapan `go run` untuk eksekusi file program `main.go`
+```go
+go run main.go
+```
+_Command_ `go run` hanya bisa digunakan pada file yang nama package-nya adalah `main`. Jika ada banyak file yang package-nya
+`main` dan file-file tersebut berada pada satu direktori level dengan file utama, maka eksekusinya adalah dengan menuliskan
+semua file sebagai argument _command_ `go run`. Contohnya bisa dilihat pada kode tersebut.
+```go
+go run main.go library.go
+```
+### Command `go test`
+
+Go menyediakan package `testing`, berguna untuk keperluan unit test. File yang akan di-test harus memiliki akhiran `_test.go`.
+Berikut adalah contoh penggunaan _command_ `go test`.
+```go
+go test main_test.go
+```
+
+### Command `go build`
+
+_command_ ini digunakan untuk mengkompilasi file program. Sebenarnya ketika eksekusi program menggunakan `go run`, terjadi
+proses kompilasi juga. File hasil kompilasi akan disimpan pada folder temporary untuk selanjutnya langsung dieksekusi.
+Berbeda dengan `go build`, _command_ ini menghasilkan file _executable_ atau _binary_ pada folder yang sedang aktif. _Default_-nya
+nama project akan otomatis dijadikan nama _binary_.
+
+Untuk nama executable sendiri bisa diubah menggunakan flag `-o`. Contoh:
+```go
+go build -o <nama-executable>
+go build -o program.exe
+```
+> Untuk sistem operasi non-windows, tidak perlu menambahkan akhiran `.exe` pada nama _binary_
+
+### Command `go get`
+
+_Command_ `go get` digunakan untuk men-download package. Berikut contoh ketika ingin men-download package Kafka driver untuk
+Go pada project.
+```go
+go get github.com/segmentio/kafka-go
+```
+Pada contoh di atas, `github.com/segmentio/kafka-go` adalah URL package kafka-go. Package yang sudah terunduh tersimpan
+dalam temporary folder yang ter-link dengan project folder di mana _command_ `go get` dieksekusi, menjadikan project tersebut
+bisa meng-_import_ package terunduh.
+
+Untuk mengunduh dependensi versi terbaru, gunakan flag `-u` pada command `go get`, misalnya:
+```go
+go get -u github.com/segmentio/kafka-go
+```
+Command `go get` harus dijalankan dalam folder project. Jika dijalankan di-luar project maka akan diunduh ke pada GOPATH.
 ## Struktur Proyek
 
 ### Ringkasan
