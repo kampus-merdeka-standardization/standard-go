@@ -50,10 +50,10 @@ pemrograman lain di luar sana.
 
 ## C. Perbandingan Go dengan Bahasa Lain
 
-- [Go vs PHP](https://github.com/gemm123/standard-go/perbandingan/go-php/README.md)
-- [Go vs Python](https://github.com/gemm123/standard-go/perbandingan/go-python/README.md)
-- [Go vs Node.js](https://github.com/gemm123/standard-go/perbandingan/go-nodejs/README.md)
-- [Go vs Java](https://github.com/gemm123/standard-go/perbandingan/go-java/README.md)
+- [Go vs PHP](https://github.com/gemm123/standard-go/blob/master/perbandingan/go-php/README.md)
+- [Go vs Python](https://github.com/gemm123/standard-go/blob/master/perbandingan/go-python/README.md)
+- [Go vs Node.js](https://github.com/gemm123/standard-go/blob/master/perbandingan/go-nodejs/README.md)
+- [Go vs Java](https://github.com/gemm123/standard-go/blob/master/perbandingan/go-java/README.md)
 
 ## D. Instalasi Golang
 
