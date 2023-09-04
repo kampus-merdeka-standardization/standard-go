@@ -204,6 +204,19 @@ Untuk mengunduh dependensi versi terbaru, gunakan flag `-u` pada command `go get
 go get -u github.com/segmentio/kafka-go
 ```
 Command `go get` harus dijalankan dalam folder project. Jika dijalankan di-luar project maka akan diunduh ke pada GOPATH.
+
+### Command `go mod tidy`
+
+_Command_ `go mod tidy` digunakan untuk memvalidasi dependensi. Jika ada dependensi yang belum ter-download, maka akan otomatis
+di-download.
+
+### Command `go mod vendor`
+
+_Command_ ini digunakan untuk vendoring. Vendoring di GO merupakan kapabilitas untuk mengunduh semua dependensi atau 3rd
+_party_, untuk disimpan di lokal dalam folder project, dalam folder bernama `vendor`. Dengan adanya folder tersebut, maka Go
+tidak akan _lookup_ 3rd _party_ ke cache folder, melainkan langsung mempergunakan yang ada dalam folder `vendor`. Jadi tidak
+perlu download lagi dari internet.
+
 ## Struktur Proyek
 
 ### Ringkasan
