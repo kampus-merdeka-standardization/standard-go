@@ -81,3 +81,7 @@ dan arsitektur multi-proses. Go, di sisi lain, unggul dalam kinerja, skalabilita
 untuk aplikasi konkurensi tinggi, layanan mikro, dan sistem terdistribusi. Konvensi pengkodean yang ketat dan konsistensi 
 Go juga dapat menghasilkan kode yang lebih dapat dipelihara dan dibaca, meskipun dengan kurva pembelajaran yang lebih curam 
 untuk beberapa pengembang.
+
+## Referensi
+
+- [Go vs PHP](https://appmaster.io/id/blog/aplikasi-backend-perbandingan-php-vs-go)
