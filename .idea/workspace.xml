@@ -5,6 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f6af610-df35-4b99-b2b4-f2943bc0b13c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/perbandingan/go-java/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/perbandingan/go-nodejs/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/perbandingan/go-php/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/perbandingan/go-python/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -38,6 +42,9 @@
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="2UnZLFTAenERRq5iF9pul4IrNgs" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -56,13 +63,25 @@
     "git-widget-placeholder": "master",
     "go.import.settings.migrated": "true",
     "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "D:/telkomsel/standard-go",
+    "last_opened_file_path": "D:/telkomsel/standard-go/perbandingan/go-python",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "editor.preferences.tabs"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "Markdown"
+    ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\telkomsel\standard-go\perbandingan\go-python" />
+      <recent name="D:\telkomsel\standard-go\perbandingan\go-php" />
+      <recent name="D:\telkomsel\standard-go\perbandingan\go-nodejs" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="standard-go" />

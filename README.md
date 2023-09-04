@@ -48,7 +48,14 @@ ketika berinteraksi dengan platform lain.
 - Karena usia bahasa pemrograman yang bisa dibilang muda, Komunitas bahasa pemrograman ini mungkin tidak sebesar bahasa-bahasa 
 pemrograman lain di luar sana.
 
-## C. Instalasi Golang
+## C. Perbandingan Go dengan Bahasa Lain
+
+- [Go vs PHP](https://github.com/gemm123/standard-go/perbandingan/go-php/README.md)
+- [Go vs Python](https://github.com/gemm123/standard-go/perbandingan/go-python/README.md)
+- [Go vs Node.js](https://github.com/gemm123/standard-go/perbandingan/go-nodejs/README.md)
+- [Go vs Java](https://github.com/gemm123/standard-go/perbandingan/go-java/README.md)
+
+## D. Instalasi Golang
 
 ### Windows
 
@@ -111,7 +118,7 @@ By default, setelah proses instalasi Go selesai, secara otomatis akan muncul env
 variabel ini adalah lokasi di mana Go ter-install. Sebagai contoh di Windows, ketika Go di-install di C:\go, maka path 
 tersebut akan menjadi isi dari GOROOT. Silakan gunakan command go env untuk melihat informasi konfigurasi environment yang ada.
 
-## D. Go Modules
+## E. Go Modules
 
 ### Penjelasan
 
@@ -137,7 +144,7 @@ Cukup itu saja cara inisialisasi project di Go. Sebenarnya selain Go Modules, se
 `$GOPATH`. Tapi inisialisasi project dengan GOPATH sudah outdate dan kurang dianjurkan untuk project-project yang dikembangkan
 menggunakan Go versi terbaru (1.14 ke atas).
 
-## E. Command
+## F. Command
 
 Pengembangan aplikasi Go tak jauh dari hal-hal yang berbau CLI atau _Command Line Interface_. Proses inisialisasi project,
 kompilasi, testing, eksekusi program, semuanya dilakukan lewat command line.
