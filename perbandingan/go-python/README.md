@@ -150,3 +150,7 @@ Namun, bukan berarti Golang bisa ketinggalan dalam kasus ini. Selama proses peng
 menggunakan _libraries_ yang paling menakjubkan.Mengenai perbandingannya, Golang mungkin tidak bisa mendekati Python karena 
 banyaknya _library_. Namun jika dibandingkan bidang penggunaan, kedua bahasa ini sebagian besar sama. Ada penanganan basis 
 data yang luar biasa, pengembangan web, enkripsi, dan _library_ pemrograman _concurrent_.
+
+## Referensi
+
+- [Go vs Python For Web Development and ML](https://www.bacancytechnology.com/blog/go-vs-python)
