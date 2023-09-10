@@ -122,8 +122,8 @@ tersebut akan menjadi isi dari GOROOT. Silakan gunakan command go env untuk meli
 
 - [Go Modules](https://github.com/gemm123/standard-go/blob/master/pemrograman-dasar/go-modules/README.md)
 - [Go Command](https://github.com/gemm123/standard-go/blob/master/pemrograman-dasar/go-command/README.md)
-- [Program Pertama: Hello World]()
-- [Variabel]()
+- [Program Pertama: Hello World](https://github.com/gemm123/standard-go/blob/master/pemrograman-dasar/program-pertama/README.md)
+- [Variabel](https://github.com/gemm123/standard-go/blob/master/pemrograman-dasar/variabel/README.md)
 - [Tipe Data]()
 - [Operator]()
 - [Seleksi Kondisi dan Perulangan]()
