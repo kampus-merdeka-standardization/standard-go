@@ -136,9 +136,9 @@ tersebut akan menjadi isi dari GOROOT. Silakan gunakan command go env untuk meli
 - [Struct](https://github.com/gemm123/standard-go/blob/master/go-dasar/struct/README.md)
 - [Method](https://github.com/gemm123/standard-go/blob/master/go-dasar/method/README.md)
 - [Properti Public dan Private](https://github.com/gemm123/standard-go/blob/master/go-dasar/properti-public-private/README.md)
-- [Interface]()
-- [Goroutine]()
-- [Channel]()
+- [Interface](https://github.com/gemm123/standard-go/blob/master/go-dasar/interface/README.md)
+- [Goroutine](https://github.com/gemm123/standard-go/blob/master/go-dasar/goroutine/README.md)
+- [Channel](https://github.com/gemm123/standard-go/blob/master/go-dasar/channel/README.md)
 
 ## F. Go Lanjut
 
