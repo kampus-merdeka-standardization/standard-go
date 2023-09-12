@@ -1,33 +1,120 @@
 # Go Web Framework
 
-## Web Framework
+## [Gin](https://github.com/gin-gonic/gin)
 
-- [Gin]()
-- [Echo]()
-- [Beego]()
-- dll
+Gin adalah _framework_ web yang ditulis dalam [Go](https://go.dev/). Ini menampilkan API seperti martini dengan kinerja 
+hingga 40 kali lebih cepat berkat [httprouter](https://github.com/julienschmidt/httprouter). Jika membutuhkan performa dan 
+produktivitas yang baik, Gin sangatlah cocok.
 
-## Routing Library
+Fitur utama Gin:
+1. Zero allocation router 
+2. Fast 
+3. Middleware support 
+4. Crash-free 
+5. JSON validation 
+6. Routes grouping 
+7. Error management 
+8. Rendering built-in 
+9. Extendable
 
-- [Chi]()
-- [FastHttp]() atau [FastHttpRouter]()
-- [Gorilla Mux]()
-- dll
+### Getting Started
 
-## HTTP Middlewares
+#### Prasyarat
 
-- [CORS]()
-- [JWT]()
-- [Rate Limiter]()
-- [Secure]()
+- Go: salah satu dari tiga [rilis](https://go.dev/doc/devel/release) _major_ terbaru (diujinya dengan ini).
 
-## Form & Validator
+#### Getting Gin
 
-- [Validator by go-playground]()
-- dll
+Jalankan perintah Go berikut untuk menginstal _pacakage_ gin:
+```shell
+$ go get -u github.com/gin-gonic/gin
+```
 
-## Database / ORM
+#### Running Gin
 
-- [Gorm]()
-- [Gorp]()
-- dll
+Pertama, impor paket Gin untuk menggunakan Gin, salah satu contoh paling sederhana seperti berikut `example.go`:
+```go
+package main
+
+import (
+  "net/http"
+
+  "github.com/gin-gonic/gin"
+)
+
+func main() {
+  r := gin.Default()
+  r.GET("/ping", func(c *gin.Context) {
+    c.JSON(http.StatusOK, gin.H{
+      "message": "pong",
+    })
+  })
+  r.Run() // listen and serve on 0.0.0.0:8080 (for windows "localhost:8080")
+}
+```
+
+Dan gunakan perintah Go untuk menjalankan demo:
+```shell
+# run example.go and visit 0.0.0.0:8080/ping on browser
+$ go run example.go
+```
+
+## [Fiber](https://github.com/gofiber/fiber)
+
+Fiber adalah kerangka kerja web yang terinspirasi dari [Express](https://github.com/expressjs/express) yang berbasiskan 
+[Fasthttp](https://github.com/valyala/fasthttp), HTTP engine paling cepat untuk Go. Dirancang untuk mempermudah, mempercepat 
+pengembangan aplikasi dengan alokasi memori nol-nya serta kinerja yang selalu diperhatikan.
+
+### Cara Memulai
+
+```go
+package main
+
+import "github.com/gofiber/fiber/v2"
+
+func main() {
+    app := fiber.New()
+
+    app.Get("/", func(c *fiber.Ctx) error {
+        return c.SendString("Hello, World 👋!")
+    })
+
+    app.Listen(":3000")
+}
+```
+
+### Instalasi
+
+Pastikan kamu sudah menginstalasi Golang. Dengan versi `1.17` atau lebih tinggi [ Direkomendasikan ].
+
+Inisialisasi proyek kamu dengan membuat folder lalu jalankan `go mod init github.com/nama-kamu/repo` ([_learn more_](https://go.dev/blog/using-go-modules)) 
+di dalam folder. Kemudian instal Fiber dengan perintah `go get`:
+```go
+go get -u github.com/gofiber/fiber/v2
+```
+
+### Fitur
+
+- Sistem [Routing](https://docs.gofiber.io/guide/routing) yang padu 
+- Menyajikan [file statis](https://docs.gofiber.io/api/app#static)
+- [Kinerja](https://docs.gofiber.io/extra/benchmarks) ekstrim
+- [Penggunaan memori](https://docs.gofiber.io/extra/benchmarks) yang kecil 
+- Cocok untuk [API](https://docs.gofiber.io/api/ctx)
+- Mendukung Middleware & [Next](https://docs.gofiber.io/api/ctx#next) seperti Express 
+- Kembangkan aplikasi dengan [Cepat](https://dev.to/koddr/welcome-to-fiber-an-express-js-styled-fastest-web-framework-written-with-on-golang-497)
+- [Template engines](https://github.com/gofiber/template)
+- [Mendukung WebSocket](https://github.com/gofiber/websocket)
+- [Server-Sent events](https://github.com/gofiber/recipes/tree/master/sse)
+- [Rate Limiter](https://docs.gofiber.io/api/middleware/limiter)
+- Tersedia dalam [19 bahasa](https://docs.gofiber.io/)
+- Dan masih banyak lagi, [kunjungi Fiber](https://docs.gofiber.io/)
+
+### Filosofi
+
+Bagi yang baru yang beralih dari [Node.js](https://nodejs.org/en/about/) ke [Go](https://go.dev/doc/) terkadang perlu waktu 
+yang cukup lama sebelum mereka mampu membuat aplikasi web dengan Go. Fiber, sebagai **kerangka kerja web** dirancang secara 
+**minimalis** dan mengikuti filosofi dari **UNIX**, sehingga pengguna baru dapat dengan cepat memasuki dunia Go dengan sambutan 
+yang hangat dan dapat diandalkan. Fiber terinspirasi dari Express, salah satu kerangka kerja web yang paling terkenal di 
+Internet. Kami menggabungkan **kemudahan** dari Express dan **kinerja luar biasa** dari Go. Apabila anda pernah membuat 
+aplikasi dengan Node.js (_dengan Express atau yang lainnya_), maka banyak metode dan prinsip yang akan terasa **sangat umum** 
+bagi anda.
