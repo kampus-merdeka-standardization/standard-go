@@ -5,11 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f6af610-df35-4b99-b2b4-f2943bc0b13c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pemrograman-dasar/fungsi/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pemrograman-dasar/pointer/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pemrograman-dasar/struct/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go-lanjut/go-web-framework/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go-lanjut/project-layout-structure/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pemrograman-dasar/array/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/go-dasar/array/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pemrograman-dasar/fungsi/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/go-dasar/fungsi/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pemrograman-dasar/go-command/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/go-dasar/go-command/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pemrograman-dasar/go-modules/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/go-dasar/go-modules/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pemrograman-dasar/map/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/go-dasar/map/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pemrograman-dasar/method/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/go-dasar/method/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pemrograman-dasar/operator/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/go-dasar/operator/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pemrograman-dasar/perulangan/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/go-dasar/perulangan/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pemrograman-dasar/pointer/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/go-dasar/pointer/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pemrograman-dasar/program-pertama/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/go-dasar/program-pertama/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pemrograman-dasar/properti-public-private/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/go-dasar/properti-public-private/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pemrograman-dasar/seleksi-kondisi/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/go-dasar/seleksi-kondisi/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pemrograman-dasar/slice/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/go-dasar/slice/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pemrograman-dasar/struct/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/go-dasar/struct/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pemrograman-dasar/tipe-data/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/go-dasar/tipe-data/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pemrograman-dasar/variabel/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/go-dasar/variabel/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
