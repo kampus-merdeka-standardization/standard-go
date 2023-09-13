@@ -139,6 +139,10 @@ tersebut akan menjadi isi dari GOROOT. Silakan gunakan command go env untuk meli
 - [Interface](https://github.com/gemm123/standard-go/blob/master/go-dasar/interface/README.md)
 - [Goroutine](https://github.com/gemm123/standard-go/blob/master/go-dasar/goroutine/README.md)
 - [Channel](https://github.com/gemm123/standard-go/blob/master/go-dasar/channel/README.md)
+- [Defer & Exit](https://github.com/gemm123/standard-go/blob/master/go-dasar/defer-exit/README.md)
+- [Error, Panic, & Recover](https://github.com/gemm123/standard-go/blob/master/go-dasar/error-panic-recover/README.md)
+- [Layout Format String](https://github.com/gemm123/standard-go/blob/master/go-dasar/layout-format-string/README.md)
+- [Unit Test](https://github.com/gemm123/standard-go/blob/master/go-dasar/unit-test/README.md)
 
 ## F. Go Lanjut
 
