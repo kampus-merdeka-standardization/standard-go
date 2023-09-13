@@ -174,11 +174,6 @@ tersebut akan menjadi isi dari GOROOT. Silakan gunakan command go env untuk meli
 
 ## Panduan Pengujian
 
-### Unit Testing
-
-- Unit testing harus dilakukan untuk setiap fungsi atau metode yang ditulis.
-- Gunakan paket `testing` bawaan Go untuk menulis unit test.
-
 ## Alur Kerja Kolaborasi
 
 ### Version Control
