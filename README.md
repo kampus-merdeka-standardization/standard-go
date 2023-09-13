@@ -143,7 +143,18 @@ tersebut akan menjadi isi dari GOROOT. Silakan gunakan command go env untuk meli
 ## F. Go Lanjut
 
 - [Project Layout Structure](https://github.com/gemm123/standard-go/blob/master/go-lanjut/project-layout-structure/README.md)
+  
+   Ada open source project yang sangat menarik untuk dipelajari, yaitu project-layout. Project tersebut isinya adalah project 
+   layout pada Go yang merupakan hasil kombinasi dari banyak project layout Go terkenal, seperti kubernetes, nats.io, istio, 
+   termasuk juga layout dari source code Go itu sendiri.
+
+
 - [Go Web Framework](https://github.com/gemm123/standard-go/blob/master/go-lanjut/go-web-framework/README.md)
+
+  Di Go, sama seperti bahasa pemrograman lainnya, ada banyak library dan framework yang siap pakai. Ada framework yang sifatnya 
+  sudah komplit, lengkap isinya dari ujung ke ujung, mulai dari setup project hingga testing dan build/deployment sudah ada 
+  semua tooling-nya. Ada juga framework yg scope-nya lebih spesifik (biasa disebut library), seperti lib untuk mempermudah 
+  operasi di data layer, lib untuk routing, dan lainnya.
 
 ## G. Pedoman Penulisan Kode
 
