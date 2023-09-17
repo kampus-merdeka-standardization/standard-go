@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f6af610-df35-4b99-b2b4-f2943bc0b13c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="1f6af610-df35-4b99-b2b4-f2943bc0b13c" name="Changes" comment="merapihkan">
+      <change afterPath="$PROJECT_DIR$/go-lanjut/go-web-framework/fiber/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go-lanjut/go-web-framework/gin/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go-lanjut/go-web-framework/gorilla-mux/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go-lanjut/go-web-framework/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/go-lanjut/go-web-framework/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
