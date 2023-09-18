@@ -143,6 +143,10 @@ tersebut akan menjadi isi dari GOROOT. Silakan gunakan command go env untuk meli
 - [Error, Panic, & Recover](https://github.com/gemm123/standard-go/blob/master/go-dasar/error-panic-recover/README.md)
 - [Layout Format String](https://github.com/gemm123/standard-go/blob/master/go-dasar/layout-format-string/README.md)
 - [Unit Test](https://github.com/gemm123/standard-go/blob/master/go-dasar/unit-test/README.md)
+- [Wait Group](https://github.com/gemm123/standard-go/blob/master/go-dasar/wait-group/README.md)
+- [Mutex](https://github.com/gemm123/standard-go/blob/master/go-dasar/mutex/README.md)
+- [Go Vendoring](https://github.com/gemm123/standard-go/blob/master/go-dasar/go-vendoring/README.md)
+- [Go Generics](https://github.com/gemm123/standard-go/blob/master/go-dasar/go-generics/README.md)
 
 ## F. Go Lanjut
 
