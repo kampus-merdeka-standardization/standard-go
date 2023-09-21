@@ -36,13 +36,13 @@ permintaan masuk dengan _registered routes_  dan memanggil _handler_ untuk _rout
 |-----------------|-----|-------|-------------|
 | Maintenance     | 4   | 4     | 4           |
 | Reputable       | 4   | 4     | 4           |
-| Compatibility   |     |       |             |
+| Compatibility   | 4   | 4     | 4           |
 | Community       | 4   | 4     | 3           |
 | Documentation   | 4   | 4     | 3           |
 | Licensing       | 4   | 4     | 4           |
-| Extensible      |     |       |             |
+| Extensible      | 3   | 3     | 4           |
 | Size            | 4   | 2     | 4           |
-| **Total Score** |     |       |             |
+| **Total Score** | 31  | 29    | 30          |
 
 
 ## Kesimpulan
