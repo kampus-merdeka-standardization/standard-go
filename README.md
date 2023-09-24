@@ -164,6 +164,15 @@ tersebut akan menjadi isi dari GOROOT. Silakan gunakan command go env untuk meli
   semua tooling-nya. Ada juga framework yg scope-nya lebih spesifik (biasa disebut library), seperti lib untuk mempermudah 
   operasi di data layer, lib untuk routing, dan lainnya.
 
+
+- [Go Library](https://github.com/gemm123/standard-go/blob/master/go-lanjut/go-library/README.md)
+
+  Library dalam bahasa pemrograman Go (Golang) merujuk pada kumpulan paket atau modul yang telah dikembangkan dan dapat digunakan 
+  kembali untuk menyederhanakan pengembangan perangkat lunak. Go memiliki ekosistem library yang cukup luas, yang mencakup 
+  berbagai bidang seperti pemrosesan data, pengembangan web, keamanan, dan lainnya. Dengan menggunakan library, para pengembang 
+  dapat menghemat waktu dan upaya dalam membangun aplikasi, karena mereka dapat memanfaatkan kode yang sudah ada untuk menyelesaikan 
+  tugas-tugas umum atau kompleks.
+
 ## G. Pedoman Penulisan Kode
 
 ### Penamaan
