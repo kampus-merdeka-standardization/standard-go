@@ -15,9 +15,9 @@ dari kode ke dalam variabel lingkungan. Namun, tidak selalu praktis untuk mengat
 atau server integrasi berkelanjutan di mana beberapa proyek dijalankan. Dotenv memuat variabel dari file .env ke dalam ENV 
 saat lingkungan diinisialisasi.
 
-## [Consul API Client](https://github.com/hashicorp/consul/tree/main/api)
+## [Consul](https://github.com/hashicorp/consul/tree/main)
 
-Library Consul API Client untuk Golang adalah sebuah library yang memungkinkan pengembang Golang untuk berinteraksi dengan 
+Library Consul untuk Golang adalah sebuah library yang memungkinkan pengembang Golang untuk berinteraksi dengan 
 konsul, sebuah sistem penyimpanan dan manajemen konfigurasi yang digunakan untuk tujuan penemuan layanan, konfigurasi dinamis, 
 dan koordinasi layanan dalam arsitektur mikro atau lingkungan terdistribusi. Dengan menggunakan library ini, pengembang dapat 
 membuat aplikasi yang dapat mendaftar layanan mereka dengan Konsul, menemukan layanan lainnya, mengambil konfigurasi yang 
@@ -35,14 +35,14 @@ membaca dari sistem konfigurasi jarak jauh (seperti etcd atau Consul) dan pemant
 perintah, membaca dari buffer, serta menetapkan nilai-nilai eksplisit sesuai kebutuhan aplikasi Anda. Dengan Viper, pengembang 
 Go dapat dengan mudah mengelola konfigurasi aplikasi mereka dengan fleksibilitas yang tinggi.
 
-| Komponen        | GoDotEnv | Consul API Client | Viper |
-|-----------------|----------|-------------------|-------|
-| Maintenance     |          |                   |       |
-| Reputable       |          |                   |       |
-| Compatibility   |          |                   |       |
-| Community       |          |                   |       |
-| Documentation   |          |                   |       |
-| Licensing       |          |                   |       |
-| Extensible      |          |                   |       |
-| Size            |          |                   |       |
-| **Total Score** |          |                   |       |
+| Komponen        | GoDotEnv | Consul | Viper |
+|-----------------|----------|--------|-------|
+| Maintenance     | 2        | 4      | 4     |
+| Reputable       | 2        | 4      | 3     |
+| Compatibility   | 4        | 3      | 4     |
+| Community       | 4        | 3      | 4     |
+| Documentation   | 4        | 4      | 3     |
+| Licensing       | 4        | 3      | 4     |
+| Extensible      | 4        | 4      | 4     |
+| Size            | 4        | 1      | 4     |
+| **Total Score** | 28       | 26     | 30    |

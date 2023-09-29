@@ -30,12 +30,12 @@ kinerja.
 
 | Komponen        | Zap | Zerolog | Logrus |
 |-----------------|-----|---------|--------|
-| Maintenance     |     |         |        |
-| Reputable       |     |         |        |
-| Compatibility   |     |         |        |
-| Community       |     |         |        |
-| Documentation   |     |         |        |
-| Licensing       |     |         |        |
-| Extensible      |     |         |        |
-| Size            |     |         |        |
-| **Total Score** |     |         |        |
+| Maintenance     | 4   | 4       | 2      |
+| Reputable       | 4   | 3       | 3      |
+| Compatibility   | 4   | 4       | 4      |
+| Community       | 4   | 3       | 4      |
+| Documentation   | 4   | 3       | 3      |
+| Licensing       | 4   | 4       | 4      |
+| Extensible      | 4   | 2       | 2      |
+| Size            | 4   | 4       | 4      |
+| **Total Score** | 32  | 27      | 26     |

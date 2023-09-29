@@ -31,14 +31,16 @@ memiliki opsi untuk menentukan strategi pengulangan kustom sesuai kebutuhan Anda
 klien dengan timeout yang berbeda untuk setiap permintaan. Semua metode HTTP diekspos dalam antarmuka yang mudah digunakan, 
 memudahkan penggunaannya dalam pengembangan aplikasi Anda.
 
+## Perbandingan
+
 | Komponen        | Fast HTTP | Chi | Heimdall |
 |-----------------|-----------|-----|----------|
-| Maintenance     |           |     |          |
-| Reputable       |           |     |          |
-| Compatibility   |           |     |          |
-| Community       |           |     |          |
-| Documentation   |           |     |          |
-| Licensing       |           |     |          |
-| Extensible      |           |     |          |
-| Size            |           |     |          |
-| **Total Score** |           |     |          |
+| Maintenance     | 4         | 3   | 1        |
+| Reputable       | 4         | 2   | 4        |
+| Compatibility   | 4         | 4   | 3        |
+| Community       | 4         | 4   | 2        |
+| Documentation   | 3         | 4   | 3        |
+| Licensing       | 4         | 4   | 4        |
+| Extensible      | 4         | 4   | 4        |
+| Size            | 4         | 4   | 4        |
+| **Total Score** | 31        | 29  | 25       |
