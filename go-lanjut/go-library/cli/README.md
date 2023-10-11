@@ -25,3 +25,17 @@ baris perintah mereka. Ini memungkinkan pembuatan aplikasi CLI yang intuitif dan
 untuk subcommands, otomatisasi bantuan (help), dan kontrol tampilan output. Cobra telah menjadi salah satu pilihan utama 
 untuk membangun aplikasi CLI di lingkungan Go, membantu pengembang mengatur fungsionalitas dan interaksi dengan pengguna 
 dengan efisien.
+
+## Perbandingan
+
+| Komponen        | Swago | urfave/cli | Cobra |
+|-----------------|-------|------------|-------|
+| Maintenance     | 4     | 3          | 4     |
+| Reputable       | 3     | 2          | 4     |
+| Compatibility   | 4     | 4          | 3     |
+| Community       | 4     | 4          | 4     |
+| Documentation   | 3     | 4          | 4     |
+| Licensing       | 4     | 4          | 4     |
+| Extensible      | 4     | 4          | 4     |
+| Size            | 4     | 4          | 4     |
+| **Total Score** | 30    | 29         | 31    |
