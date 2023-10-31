@@ -148,7 +148,32 @@ tersebut akan menjadi isi dari GOROOT. Silakan gunakan command go env untuk meli
 - [Go Vendoring](https://github.com/gemm123/standard-go/blob/master/go-dasar/go-vendoring/README.md)
 - [Go Generics](https://github.com/gemm123/standard-go/blob/master/go-dasar/go-generics/README.md)
 
-## F. Go Lanjut
+## F. Convention Code
+
+### Penamaan file
+
+- Go mengikuti konvensi di mana semua file sumber menggunakan huruf kecil dengan garis bawah yang memisahkan beberapa kata.
+- Nama file gabungan dipisahkan dengan _.
+- Nama file yang dimulai dengan “.” atau “_” diabaikan oleh go.
+- File dengan akhiran `_test.go` hanya dikompilasi dan dijalankan oleh alat `go test`.
+
+### Penamaan Variabel dan Fungsi
+
+- Gunakan huruf kapital awal untuk nama yang akan diekspor (publik). Misalnya, `MyPublicFunction`.
+- Gunakan huruf kecil untuk nama yang tidak diekspor (privat). Misalnya, `myPrivateFunction`.
+- Hindari pemakaian singkatan jika tidak diperlukan.
+- *Constant* harus menggunakan huruf kapital semua dan menggunakan garis bawah `_` untuk memisahkan kata.
+
+### Error Handling
+
+- Golang menganjurkan penggunaan multiple return values untuk error handling. Biasanya, hasil fungsi disertai dengan nilai error yang akan diuji setelah pemanggilan fungsi.
+- Gunakan `if err != nil` untuk menangani kesalahan. Jangan mengabaikan error yang dikembalikan oleh fungsi.
+
+### Pengelolaan Dependensi
+
+Gunakan Go Modules (go mod) untuk mengelola dependensi.
+
+## G. Go Lanjut
 
 - [Project Layout Structure](https://github.com/gemm123/standard-go/blob/master/go-lanjut/project-layout-structure/README.md)
   
